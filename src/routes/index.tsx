@@ -1,5 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-cascada.jpg";
+import heroCascadaImg from "@/assets/hero-cascada.jpg";
+import heroAereoAsset from "@/assets/hero-aereo.jpg.asset.json";
+import logoAsset from "@/assets/logo-la-florida.jpg.asset.json";
+const heroImg = heroAereoAsset.url;
+const heroImgCascada = heroCascadaImg;
 import rioImg from "@/assets/rio.jpg";
 import senderosImg from "@/assets/senderos.jpg";
 import campingImg from "@/assets/camping.jpg";
@@ -61,10 +65,8 @@ function Nav() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50">
       <div className="container-soft flex items-center justify-between h-16">
-        <a href="#top" className="flex items-center gap-2">
-          <div className="size-9 rounded-full bg-[var(--leaf)] grid place-items-center text-primary-foreground">
-            <Leaf className="size-5" />
-          </div>
+        <a href="#top" className="flex items-center gap-3">
+          <img src={logoAsset.url} alt="La Florida" className="size-11 rounded-full object-cover bg-white" />
           <div className="leading-tight">
             <div className="font-display text-base">La Florida</div>
             <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Paraíso Ecoturístico</div>
@@ -492,7 +494,7 @@ function CTA() {
     <section className="py-24">
       <div className="container-soft">
         <div className="relative rounded-[2.5rem] overflow-hidden p-12 md:p-20 text-primary-foreground">
-          <img src={heroImg} alt="" aria-hidden width={1920} height={1080}
+          <img src={heroImgCascada} alt="" aria-hidden width={1920} height={1080}
                className="absolute inset-0 size-full object-cover" />
           <div className="absolute inset-0 bg-[oklch(0.22_0.06_155/0.75)]" />
           <div className="relative max-w-2xl">
@@ -523,10 +525,8 @@ function Footer() {
     <footer className="border-t border-border py-12 bg-card">
       <div className="container-soft grid md:grid-cols-3 gap-8 text-sm">
         <div>
-          <div className="flex items-center gap-2">
-            <div className="size-9 rounded-full bg-[var(--leaf)] grid place-items-center text-primary-foreground">
-              <Leaf className="size-5" />
-            </div>
+          <div className="flex items-center gap-3">
+            <img src={logoAsset.url} alt="La Florida" className="size-12 rounded-full object-cover bg-white" />
             <div className="font-display text-lg">La Florida</div>
           </div>
           <p className="mt-4 text-muted-foreground max-w-xs">
