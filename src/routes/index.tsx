@@ -134,8 +134,8 @@ function Experiencia() {
       <div className="container-soft grid md:grid-cols-2 gap-16 items-center">
         <div>
           <Eyebrow>Nuestra filosofía</Eyebrow>
-          <h2 className="mt-4 text-5xl md:text-7xl leading-[1.05]" style={{ fontFamily: "var(--font-script)" }}>
-            Cuidar la tierra,<br />cuidar la gente.
+          <h2 className="mt-4 text-4xl md:text-5xl">
+            “Cuidar la tierra, cuidar la gente y compartir con equidad.”
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
             La Florida nació hace más de 8 años con una idea sencilla: crear un espacio
