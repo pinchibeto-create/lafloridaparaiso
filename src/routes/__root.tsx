@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "La Florida Paraíso Ecoturístico" },
+      { name: "description", content: "La Florida Paraíso Ecoturístico offers a family-friendly ecotourism experience in Chiapas, focusing on nature immersion." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "La Florida Paraíso Ecoturístico" },
+      { property: "og:description", content: "La Florida Paraíso Ecoturístico offers a family-friendly ecotourism experience in Chiapas, focusing on nature immersion." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "La Florida Paraíso Ecoturístico" },
+      { name: "twitter:description", content: "La Florida Paraíso Ecoturístico offers a family-friendly ecotourism experience in Chiapas, focusing on nature immersion." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/Dz4hnEDN6fUxfIdx7RoAZvwP7oy2/social-images/social-1780549790724-120442092_366049704767850_3469942760984213088_n.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/Dz4hnEDN6fUxfIdx7RoAZvwP7oy2/social-images/social-1780549790724-120442092_366049704767850_3469942760984213088_n.webp" },
     ],
     links: [
       {
