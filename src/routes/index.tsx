@@ -1,5 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-cascada.jpg";
+import heroCascadaImg from "@/assets/hero-cascada.jpg";
+import heroAereoAsset from "@/assets/hero-aereo.jpg.asset.json";
+import logoAsset from "@/assets/logo-la-florida.jpg.asset.json";
+const heroImg = heroAereoAsset.url;
+const heroImgCascada = heroCascadaImg;
 import rioImg from "@/assets/rio.jpg";
 import senderosImg from "@/assets/senderos.jpg";
 import campingImg from "@/assets/camping.jpg";
