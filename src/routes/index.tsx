@@ -305,15 +305,17 @@ function Cabanas() {
         <div className="mt-20 grid md:grid-cols-3 gap-10">
           {cabanas.map((c) => (
             <article key={c.name} className="group flex flex-col">
-              <div className="aspect-[4/5] overflow-hidden rounded-lg bg-secondary">
+              <div className="aspect-[4/5] overflow-hidden rounded-lg bg-secondary relative shadow-[var(--shadow-soft)]">
                 <img
                   src={c.img}
                   alt={`Cabaña ${c.name}`}
                   width={1280}
                   height={1600}
                   loading="lazy"
-                  className="size-full object-cover transition-transform duration-[1400ms] ease-in-out group-hover:scale-[1.04]"
+                  className="img-natural size-full object-cover transition-transform duration-[1400ms] ease-in-out group-hover:scale-[1.04]"
                 />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[oklch(0.45_0.05_90/0.10)] to-[oklch(0.235_0.018_160/0.22)] mix-blend-multiply" />
+                <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-[oklch(0.235_0.018_160/0.10)] rounded-lg" />
               </div>
               <div className="pt-8 flex flex-col flex-1">
                 <div className="flex items-baseline justify-between gap-3">
