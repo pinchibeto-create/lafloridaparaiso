@@ -6,4 +6,5 @@ export default defineConfig({
       entry: "server",
     },
   },
+  nitro: true,
 });
