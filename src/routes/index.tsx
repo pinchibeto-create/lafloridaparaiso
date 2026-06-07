@@ -199,15 +199,17 @@ function Experiencia() {
           </p>
         </div>
         <div className="relative group">
-          <div className="overflow-hidden rounded-lg">
+          <div className="overflow-hidden rounded-lg relative shadow-[var(--shadow-soft)]">
             <img
               src={rioImg}
-              alt="Río cristalino"
+              alt="Puente sobre el río de aguas cristalinas en La Florida"
               width={1280}
               height={1600}
               loading="lazy"
-              className="aspect-[4/5] object-cover w-full transition-transform duration-[1200ms] ease-in-out group-hover:scale-[1.03]"
+              className="img-natural aspect-[4/5] object-cover w-full transition-transform duration-[1200ms] ease-in-out group-hover:scale-[1.03]"
             />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[oklch(0.45_0.05_90/0.10)] to-[oklch(0.235_0.018_160/0.22)] mix-blend-multiply" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[oklch(0.235_0.018_160/0.35)] via-transparent to-transparent" />
           </div>
           <div className="absolute -bottom-8 -left-4 md:-left-10 bg-background rounded-lg p-6 max-w-[240px] shadow-[var(--shadow-soft)]">
             <Waves {...ICON} className="size-5 text-[var(--bronze)]" />
