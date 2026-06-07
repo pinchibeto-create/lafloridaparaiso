@@ -389,7 +389,7 @@ function Actividades() {
                 width={1280}
                 height={1700}
                 loading="lazy"
-                className="absolute inset-0 size-full object-cover transition-transform duration-[1400ms] ease-in-out group-hover:scale-[1.05]"
+                className="img-natural absolute inset-0 size-full object-cover transition-transform duration-[1400ms] ease-in-out group-hover:scale-[1.05]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
               <div className="absolute top-6 left-6 text-[10px] uppercase tracking-[0.28em] text-white/70 font-medium">
