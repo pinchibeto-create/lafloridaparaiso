@@ -118,6 +118,22 @@
   transition: all 500ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+@utility img-natural {
+  filter: saturate(0.88) contrast(1.06) brightness(0.98);
+}
+
+@utility img-overlay-warm {
+  position: relative;
+}
+@utility img-overlay-warm-after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(160deg, oklch(0.45 0.05 90 / 0.10), oklch(0.235 0.018 160 / 0.18));
+  mix-blend-mode: multiply;
+}
+
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
