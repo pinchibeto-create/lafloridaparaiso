@@ -5,12 +5,17 @@ import heroAereoAsset from "@/assets/hero-aereo.jpg.asset.json";
 import logoAsset from "@/assets/logo-la-florida.jpg.asset.json";
 const heroImg = heroAereoAsset.url;
 const heroImgCascada = heroCascadaImg;
-import rioImg from "@/assets/rio.jpg";
 import senderosImg from "@/assets/senderos.jpg";
-import campingImg from "@/assets/camping.jpg";
-import meliponaImg from "@/assets/cabana-melipona.jpg";
-import trigonaImg from "@/assets/cabana-trigona.jpg";
-import ecologicaImg from "@/assets/cabana-ecologica.jpg";
+import filosofiaAsset from "@/assets/filosofia-puente.jpg.asset.json";
+import campingAsset from "@/assets/camping-pradera.jpg.asset.json";
+import meliponaAsset from "@/assets/cabana-melipona-real.jpg.asset.json";
+import trigonaAsset from "@/assets/cabana-trigona-real.jpg.asset.json";
+import ecologicaAsset from "@/assets/cabana-ecologica-real.jpg.asset.json";
+const rioImg = filosofiaAsset.url;
+const campingImg = campingAsset.url;
+const meliponaImg = meliponaAsset.url;
+const trigonaImg = trigonaAsset.url;
+const ecologicaImg = ecologicaAsset.url;
 import {
   Waves, TreePine, Tent, MapPin, Phone, Clock, Users,
   Wifi, Dog, Music, Flame, Ban, MessageCircle, Star, ArrowUpRight, Plus, Minus,
