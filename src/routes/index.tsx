@@ -5,12 +5,17 @@ import heroAereoAsset from "@/assets/hero-aereo.jpg.asset.json";
 import logoAsset from "@/assets/logo-la-florida.jpg.asset.json";
 const heroImg = heroAereoAsset.url;
 const heroImgCascada = heroCascadaImg;
-import rioImg from "@/assets/rio.jpg";
 import senderosImg from "@/assets/senderos.jpg";
-import campingImg from "@/assets/camping.jpg";
-import meliponaImg from "@/assets/cabana-melipona.jpg";
-import trigonaImg from "@/assets/cabana-trigona.jpg";
-import ecologicaImg from "@/assets/cabana-ecologica.jpg";
+import filosofiaAsset from "@/assets/filosofia-puente.jpg.asset.json";
+import campingAsset from "@/assets/camping-pradera.jpg.asset.json";
+import meliponaAsset from "@/assets/cabana-melipona-real.jpg.asset.json";
+import trigonaAsset from "@/assets/cabana-trigona-real.jpg.asset.json";
+import ecologicaAsset from "@/assets/cabana-ecologica-real.jpg.asset.json";
+const rioImg = filosofiaAsset.url;
+const campingImg = campingAsset.url;
+const meliponaImg = meliponaAsset.url;
+const trigonaImg = trigonaAsset.url;
+const ecologicaImg = ecologicaAsset.url;
 import {
   Waves, TreePine, Tent, MapPin, Phone, Clock, Users,
   Wifi, Dog, Music, Flame, Ban, MessageCircle, Star, ArrowUpRight, Plus, Minus,
@@ -194,15 +199,17 @@ function Experiencia() {
           </p>
         </div>
         <div className="relative group">
-          <div className="overflow-hidden rounded-lg">
+          <div className="overflow-hidden rounded-lg relative shadow-[var(--shadow-soft)]">
             <img
               src={rioImg}
-              alt="Río cristalino"
+              alt="Puente sobre el río de aguas cristalinas en La Florida"
               width={1280}
               height={1600}
               loading="lazy"
-              className="aspect-[4/5] object-cover w-full transition-transform duration-[1200ms] ease-in-out group-hover:scale-[1.03]"
+              className="img-natural aspect-[4/5] object-cover w-full transition-transform duration-[1200ms] ease-in-out group-hover:scale-[1.03]"
             />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[oklch(0.45_0.05_90/0.10)] to-[oklch(0.235_0.018_160/0.22)] mix-blend-multiply" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[oklch(0.235_0.018_160/0.35)] via-transparent to-transparent" />
           </div>
           <div className="absolute -bottom-8 -left-4 md:-left-10 bg-background rounded-lg p-6 max-w-[240px] shadow-[var(--shadow-soft)]">
             <Waves {...ICON} className="size-5 text-[var(--bronze)]" />
@@ -298,15 +305,17 @@ function Cabanas() {
         <div className="mt-20 grid md:grid-cols-3 gap-10">
           {cabanas.map((c) => (
             <article key={c.name} className="group flex flex-col">
-              <div className="aspect-[4/5] overflow-hidden rounded-lg bg-secondary">
+              <div className="aspect-[4/5] overflow-hidden rounded-lg bg-secondary relative shadow-[var(--shadow-soft)]">
                 <img
                   src={c.img}
                   alt={`Cabaña ${c.name}`}
                   width={1280}
                   height={1600}
                   loading="lazy"
-                  className="size-full object-cover transition-transform duration-[1400ms] ease-in-out group-hover:scale-[1.04]"
+                  className="img-natural size-full object-cover transition-transform duration-[1400ms] ease-in-out group-hover:scale-[1.04]"
                 />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-[oklch(0.45_0.05_90/0.10)] to-[oklch(0.235_0.018_160/0.22)] mix-blend-multiply" />
+                <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-[oklch(0.235_0.018_160/0.10)] rounded-lg" />
               </div>
               <div className="pt-8 flex flex-col flex-1">
                 <div className="flex items-baseline justify-between gap-3">
@@ -380,7 +389,7 @@ function Actividades() {
                 width={1280}
                 height={1700}
                 loading="lazy"
-                className="absolute inset-0 size-full object-cover transition-transform duration-[1400ms] ease-in-out group-hover:scale-[1.05]"
+                className="img-natural absolute inset-0 size-full object-cover transition-transform duration-[1400ms] ease-in-out group-hover:scale-[1.05]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
               <div className="absolute top-6 left-6 text-[10px] uppercase tracking-[0.28em] text-white/70 font-medium">
