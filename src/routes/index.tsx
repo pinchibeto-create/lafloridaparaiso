@@ -5,17 +5,20 @@ import heroAereoAsset from "@/assets/hero-aereo.jpg.asset.json";
 import logoAsset from "@/assets/logo-la-florida.jpg.asset.json";
 const heroImg = heroAereoAsset.url;
 const heroImgCascada = heroCascadaImg;
-import senderosImg from "@/assets/senderos.jpg";
+import senderosArcosAsset from "@/assets/senderos-arcos.jpg.asset.json";
 import filosofiaAsset from "@/assets/filosofia-puente.jpg.asset.json";
 import campingAsset from "@/assets/camping-pradera.jpg.asset.json";
 import meliponaAsset from "@/assets/cabana-melipona-real.jpg.asset.json";
 import trigonaAsset from "@/assets/cabana-trigona-real.jpg.asset.json";
 import ecologicaAsset from "@/assets/cabana-ecologica-real.jpg.asset.json";
+import rioLoopAsset from "@/assets/rio-loop.mp4.asset.json";
 const rioImg = filosofiaAsset.url;
 const campingImg = campingAsset.url;
 const meliponaImg = meliponaAsset.url;
 const trigonaImg = trigonaAsset.url;
 const ecologicaImg = ecologicaAsset.url;
+const senderosImg = senderosArcosAsset.url;
+const rioLoopUrl = rioLoopAsset.url;
 import {
   Waves, TreePine, Tent, MapPin, Phone, Clock, Users,
   Wifi, Dog, Music, Flame, Ban, MessageCircle, Star, ArrowUpRight, Plus, Minus,
@@ -608,15 +611,18 @@ function CTA() {
     <section className="py-28 md:py-36">
       <div className="container-soft">
         <div className="relative rounded-lg overflow-hidden p-12 md:p-24 text-white">
-          <img
-            src={heroImgCascada}
-            alt=""
+          <video
+            src={rioLoopUrl}
+            poster={heroImgCascada}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
             aria-hidden
-            width={1920}
-            height={1080}
-            className="absolute inset-0 size-full object-cover"
+            className="img-natural absolute inset-0 size-full object-cover"
           />
-          <div className="absolute inset-0 bg-[oklch(0.235_0.018_160/0.78)]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[oklch(0.235_0.018_160/0.82)] via-[oklch(0.235_0.018_160/0.7)] to-[oklch(0.30_0.04_150/0.75)]" />
           <div className="relative max-w-2xl">
             <Eyebrow light>Reserva</Eyebrow>
             <h2 className="font-display text-4xl md:text-7xl font-light leading-[1.02] mt-6">
