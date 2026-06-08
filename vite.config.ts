@@ -6,5 +6,7 @@ export default defineConfig({
       entry: "server",
     },
   },
-  nitro: true,
+  nitro: {
+    preset: "netlify",
+  },
 });
